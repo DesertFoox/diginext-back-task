@@ -1,9 +1,12 @@
+import dotenv from "dotenv";
 import express from "express";
 import swaggerUi from "swagger-ui-express";
 import swaggerDocument from "../swagger-output.json" assert { type: "json" };
 import dbConnect from "./db/connectDb.js";
 import seedData from "./db/seed.js";
 import apiRoutes from "./routes/api.js";
+
+dotenv.config();
 
 const app = express();
 
