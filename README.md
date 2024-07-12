@@ -17,8 +17,8 @@ This project implements a simple following system API using Node.js, Express, an
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/following-system.git
-   cd following-system
+   git clone https://github.com/DesertFoox/diginext-back-task.git
+   cd diginext-back-task
    ```
 
 2. Install dependencies:
@@ -111,28 +111,27 @@ This project implements a simple following system API using Node.js, Express, an
 ```
 following-system
 │
-├── models
-│   └── user.js
-│
-├── routes
-│   └── api.js
-│
-├── db
-│   └── connectDb.js
-|   └── seed.js
-|
-├── controllers
-│   └── user.controller.js
-│
-├── services
-│   └── user.service.js
-│
-├── swagger.js
-├── dbConnect.js
-├── seed.js
-├── app.js
-├── server.js
-└── package.json
+├── src
+│   ├── controllers
+│   │   └── user.controller.js
+│   ├── db
+│   │   ├── connectDb.js
+│   │   └── seed.js
+│   ├── models
+│   │   └── user.js
+│   ├── routes
+│   │   └── api.js
+│   ├── services
+│   │   └── user.service.js
+│   ├── server.js
+│   └── swagger.js
+├── .env
+├── .env.sample
+├── .gitignore
+├── package-lock.json
+├── package.json
+├── README.md
+└── swagger-output.json
 ```
 
 ## Technologies Used
